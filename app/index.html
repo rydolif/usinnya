@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Start</title>
+	<title>Главная</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -16,17 +16,10 @@
 
 <body>
 
-<!-- 	<div class="preloader">
-		<div class="pulse"></div>
-	</div> -->
+	<div class="wrap">
 
-	<header class="header">
-		<div class="container">
+		<header class="header">
 			<div class="header__container">
-		
-				<div class="header__logo">
-					<a href="index.html"><img src="img/logo.svg" alt="logo" width="160" height="75"></a>
-				</div>
 
 				<button class="hamburger" type="button">
 					<span class="hamburger__box">
@@ -34,73 +27,512 @@
 					</span>
 				</button>
 
-				<nav class="nav">
+				<nav class="header__nav nav">
 					<ul>
-						<li><a href="index.html">Головна</a></li>
-						<li><a href="catalog.html">Наші послуги</a></li>
-						<li><a href="about.html">Виконанні роботи</a></li>
-						<li><a href="contacts.html">Контакти</a></li>
-					</ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="#">Оплата и доставка</a></li>
+						<li><a href="#">О магазине</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Написать нам</a></li>
+						<li><a href="#">Отследить посылку</a></li>
+					</ul>                                                       
 				</nav>
 
+				<div class="header__info">
+					<p>Работаем <br>c 9 до 19</p>
+					<a href="#" target="_blank"><img src="img/mts.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/viber.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/call.png" alt=""></a>
+					<div class="header__info_tel">
+						<a href="tel:+375292500199"><b>+375 (29) 25 00 199</b></a>
+						<img src="img/main--slider__arrow.png" alt="">
+						<ul>
+							<li><a href="tel:+375292500199"><b>+375 (29) 25 00 199</b></a></li>
+							<li><a href="tel:+375292500199"><b>+375 (29) 25 00 199</b></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<a href="#" class="header__login">
+					<img src="img/login.png" alt="">
+					<span>Мой аккаунт</span>
+				</a>
 			</div>
-		</div>
-	</header>
+		</header>
 
-	<main class="main">
+		<section class="hero">
+			<div class="header__container--two header__container">
 
-		<section class="section" id="app">
-			<div class="container">
+				<a href="#" class="header__logo">
+					<img src="img/header--logo.png" alt="">
+					<p>
+						<b>kupisemena.by</b><br>
+						<span>интернет-магазин</span>
+					</p>
+				</a>
 
+				<form class="header__search">
+					<input type="text" placeholder="Поиск">
+					<button>Найти</button>
+				</form>
+
+				<div class="header__btn">
+					<a href="#"><img src="img/header--basket.png" alt="">корзина</a>
+					<span>12 товаров</span>
+				</div>
+			</div>
+
+			<div class="header__container">
+				<a href="#" class="header__bunner"><img src="img/header--bunner.jpg" alt=""></a>
 			</div>
 		</section>
 
-	</main>
+		<main class="main">
 
-	<footer class="footer">
-		<div class="container">
-			
-		</div>
-	</footer>
+			<div class="main--left">
 
-	<!-- modal -->
-		<div class="modal" id="order">
-			<form action="sendmail.php" class="form" method="post">
-
-				<button class="close order_close" type="button">
-					<span></span>
-					<span></span>
-				</button>
-
-				<h3>Оставьте заявку, <br>мы свяжемся с Вами</h3>
-				<input type="hidden" name="subject" value="Узнать подробнее!">
-
-				<div class="">
-					<input type="text" name="name" placeholder="Имя" required>
+				<div class="main--left__nav">
+					<div class="main--left__nav_header">
+						<a href="#"><img src="img/main--left__nav_header.png" alt=""></a>
+					</div>
+					<div class="main--left__nav_main">
+						<ul>
+							<li><a href="#"><img src="img/main--left__nav1.png" alt=""><span>Семена овощей</span></a></li>
+							<li><a href="#"><img src="img/main--left__nav2.png" alt=""><span>Семена цветов</span></a></li>
+							<li><a href="#"><img src="img/main--left__nav3.png" alt=""><span>Грибы</span></a></li>
+							<li><a href="#"><img src="img/main--left__nav4.png" alt=""><span>Сидераты, медоносы</span></a></li>
+							<li><a href="#"><img src="img/main--left__nav5.png" alt=""><span>Удобрения</span></a></li>
+						</ul>
+					</div>
+					<a href="#" class="main--left__nav_footer">
+						<img src="img/main--left__nav_footer.png" alt="">
+					</a>
 				</div>
-				<div class="">
-					<input type="tel" name="phone" required placeholder="Телефон">
-				</div>
-				<div class="">
-					<button type="submit" class="btn" name="submit">Отправить</button>
-				</div>
-				<p>Нажимая на кнопку, вы даете согласие <br>на обработку своих <a href="#" target="_blank">персональных данных</a></p>
 
-			</form>
-		</div>
+				<a href="#" class="main--left__bunner">
+					<img src="img/main--left__bunner.jpg" alt="">
+					<b>Баннер</b>
+				</a>
 
-		<div class="modal" id="thanks">
-			<button class="close thanks_close" type="button">
-				<span></span>
-				<span></span>
-			</button>
-			<h3>Спасибо <br>за доверие!</h3>
-			<p>Мы обязательно с вами свяжемся!</p>
-		</div>
-	<!-- modal end-->
+				<form class="main--left__form">
+					<h3>Подпишитесь на новинки нашего магазина:</h3>
+					<input type="email" placeholder="Ваша эл. почта">
+				</form>
+
+			</div>
+
+			<div class="main--center">
+
+				<div class="main--center__nav">
+					<ul>
+						<li><a href="#"><img src="img/main--center__nav1.png" alt=""><span>оплата и доставка</span></a></li>
+						<li><a href="#"><img src="img/main--center__nav2.png" alt=""><span>бонусы и подарки</span></a></li>
+						<li><a href="#"><img src="img/main--center__nav3.png" alt=""><span>самовывоз, как нас найти</span></a></li>
+						<li><a href="#"><img src="img/main--center__nav4.png" alt=""><span>ОТЗЫВЫ</span></a></li>
+						<li><a href="#"><img src="img/main--center__nav5.png" alt=""><span>статьи</span></a></li>
+					</ul>
+				</div>
+
+				<div class="main--center__card">
+					<div class="main--center__card_item">
+						<img src="img/main--center__card.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+					<div class="main--center__card_item">
+						<img src="img/main--center__card.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+					<div class="main--center__card_item">
+						<img src="img/main--center__card.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+					<div class="main--center__card_item">
+						<img src="img/main--center__card.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+					<div class="main--center__card_item">
+						<img src="img/main--center__card.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+					<div class="main--center__card_item">
+						<img src="img/main--center__card.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+					<div class="main--center__card_item">
+						<img src="img/main--center__card.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+					<div class="main--center__card_item">
+						<img src="img/main--center__card.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+					<div class="main--center__card_item">
+						<img src="img/main--center__card.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+					<div class="main--center__card_item">
+						<img src="img/main--center__card.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+					<div class="main--center__card_item">
+						<img src="img/main--center__card.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+					<div class="main--center__card_item">
+						<img src="img/main--center__card.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="main--center__new">
+					<h2>Новости</h2>
+					<div class="main--center__new_item">
+						<img src="img/main--center__new1.jpg" alt="">
+						<div class="main--center__new_wrap">
+							<h3>Выращивание рассады огурцов</h3>
+							<time>07.05.2019</time>
+							<p>При желании получать урожай огурцов как можно раньше, многие огородники выращивают часть огурцов через рассаду</p>
+						</div>
+					</div>
+					<div class="main--center__new_item">
+						<img src="img/main--center__new2.jpg" alt="">
+						<div class="main--center__new_wrap">
+							<h3>Выращивание рассады огурцов</h3>
+							<time>07.05.2019</time>
+							<p>При желании получать урожай огурцов как можно раньше, многие огородники выращивают часть огурцов через рассаду</p>
+						</div>
+					</div>
+					<div class="main--center__new_item">
+						<img src="img/main--center__new1.jpg" alt="">
+						<div class="main--center__new_wrap">
+							<h3>Выращивание рассады огурцов</h3>
+							<time>07.05.2019</time>
+							<p>При желании получать урожай огурцов как можно раньше, многие огородники выращивают часть огурцов через рассаду</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="main--slider swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/main--slider1.png" alt=""></div>
+						<div class="swiper-slide"><img src="img/main--slider2.png" alt=""></div>
+						<div class="swiper-slide"><img src="img/main--slider3.png" alt=""></div>
+						<div class="swiper-slide"><img src="img/main--slider4.png" alt=""></div>
+						<div class="swiper-slide"><img src="img/main--slider5.png" alt=""></div>
+						<div class="swiper-slide"><img src="img/main--slider3.png" alt=""></div>
+						<div class="swiper-slide"><img src="img/main--slider2.png" alt=""></div>
+						<div class="swiper-slide"><img src="img/main--slider1.png" alt=""></div>
+						<div class="swiper-slide"><img src="img/main--slider4.png" alt=""></div>
+						<div class="swiper-slide"><img src="img/main--slider5.png" alt=""></div>
+					</div>
+					<div class="main--slider__next swiper-button-next"></div>
+					<div class="main--slider__prev swiper-button-prev"></div>
+				</div>
+
+				<div class="main--center__card main--center__card--big">
+					<div class="main--center__card_item main--center__card_item--big">
+						<img src="img/main--center__card--big1.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+					<div class="main--center__card_item main--center__card_item--big">
+						<img src="img/main--center__card--big2.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+					<div class="main--center__card_item main--center__card_item--big">
+						<img src="img/main--center__card--big3.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+					<div class="main--center__card_item main--center__card_item--big">
+						<img src="img/main--center__card--big4.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+					<div class="main--center__card_item main--center__card_item--big">
+						<img src="img/main--center__card--big1.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+					<div class="main--center__card_item main--center__card_item--big">
+						<img src="img/main--center__card--big1.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+					<div class="main--center__card_item main--center__card_item--big">
+						<img src="img/main--center__card--big2.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+					<div class="main--center__card_item main--center__card_item--big">
+						<img src="img/main--center__card--big3.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+					<div class="main--center__card_item main--center__card_item--big">
+						<img src="img/main--center__card--big4.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+					<div class="main--center__card_item main--center__card_item--big">
+						<img src="img/main--center__card--big1.jpg" alt="">
+						<div class="main--center__card_text">
+							<h3>Капуста белокочанная Бомонд-Агро F1</h3>
+							<p>Партенокарпические (самоопыляемые)</p>
+							<div class="main--center__card_wrap">
+								<b class="main--center__card_price"><span>1,80 </span>руб.</b>
+								<span class="main--center__card_weight">0,5 г</span>
+							</div>
+							<a href="#" class="btn"><img src="img/header--basket.png" alt="">в корзину</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</main>
+
+		<section class="content">
+			<h2>Коротко о нас</h2>
+			<div class="content__container">
+				<p>
+					Десукция доступна. Являясь следствием законов широтной зональности и вертикальной поясности, свойство дает бугор пучения. Если принять во внимание физическую неоднородность почвенного индивидуума, можно прийти к выводу о том, что орошение экстремально трансформирует фрактал.
+				</p>
+				<p>
+					Восстановление, как бы это ни казалось парадоксальным, пространственно неоднородно. Вскипание с HCl, как следствие уникальности почвообразования в данных условиях, охлаждает подпахотный педон. Эпюра генетически перемещает фрактал. Восстановление, как бы это ни казалось парадоксальным, пространственно неоднородно.  
+				</p>
+				<p>
+					Тиксотропия концентрирует фронт как при нагреве, так и при охлаждении. Микрозападина непараметрически перемещает водоупор. Переуплотнение охлаждает разрез, и этот процесс может повторяться многократно. Принимая во внимание искусственность границ элементарной почвы и произвольность ее положения в пространстве почвенного покрова, уровень грунтовых вод количественно ускоряет подбур, и этот процесс может повторяться многократно. Как показывает практика режимных наблюдений в полевых условиях, усадка изотермично вымывает в внутрипочвенный режим.
+				</p>
+			</div>
+		</section>
+
+		<footer class="footer">
+
+			<div class="footer__info">
+				<div class="footer__item">
+					<ul>
+						<li><a href="#">Оплата и доставка</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Вопрос-ответ</a></li>
+						<li><a href="#">Статьи</a></li>
+						<li><a href="#">Статьи</a></li>
+					</ul>
+				</div>
+				<div class="footer__item">
+					<h3>Время работы:</h3>
+					<p>
+						Время работы павильонов: <br>
+						9-00 - 18-00. <br>
+						Воскресенье: с 10-00 до 17-00. <br>
+						Выходной: Понедельник. <br>
+					</p>
+				</div>
+				<div class="footer__item">
+					<h3>Наш адрес</h3>
+					<p>
+						Комаровский рынок:  <br>
+						(г. Минск, ул. В. Хоружей, 8. <br>
+						Павильоны № 10, 15.) <br>
+						Станция метро: Я. Коласа. <br>
+					</p>
+				</div>
+				<div class="footer__item">
+					<p>
+						ЧТПУП "АЙРИСАГРО" 
+					</p>
+					<p>
+						УНП 190942867 
+					</p>
+					<p>
+						Зарегистрирован в Торговом <br>реестре 28.07.2016 г.
+					</p>
+				</div>
+
+				<div class="footer__item">
+					<h3>Способы оплаты</h3>
+					<ul class="footer__partner">
+						<li><a href="#" target="_black"><img src="img/partner1.jpg" alt=""></a></li>
+						<li><a href="#" target="_black"><img src="img/partner2.jpg" alt=""></a></li>
+						<li><a href="#" target="_black"><img src="img/partner3.jpg" alt=""></a></li>
+						<li><a href="#" target="_black"><img src="img/partner4.jpg" alt=""></a></li>
+						<li><a href="#" target="_black"><img src="img/partner5.jpg" alt=""></a></li>
+						<li><a href="#" target="_black"><img src="img/partner6.jpg" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer__copy">
+				<p>© 2019 IRISAGRO </p>
+				<p>Разработано в <img src="img/copy.jpg" alt=""></p>
+			</div>
+
+		</footer>
+
+	</div>
 
 	<script src="js/scripts.min.js"></script>
-
 
 </body>
 </html>
