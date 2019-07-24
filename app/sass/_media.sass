@@ -19,6 +19,12 @@
 
 
 @media only screen and (max-width : 1200px)
+	.catalog__left-filter
+		padding-left: 0
+
+	.catalog__left-filter_wrap p
+		padding: 0 10px
+
 	.wrap
 		max-width: 992px
 
@@ -100,9 +106,48 @@
 
 			&__next
 				right: 5px
+	
+
+	.footer__item	
+		padding: 5px
 
 
 @media only screen and (max-width : 992px)
+	.catalog
+		&__left-filter
+			label
+				font-size: 12px
+				padding-left: 20px
+
+			p, button
+				font-size: 12px
+
+		&__text
+			h1
+				font-size: 26px
+				margin-bottom: 10px
+
+			p
+				margin-bottom: 5px
+
+		&__bunner,
+		&__filter
+			margin-bottom: 15px
+
+		&__bunner
+			p
+				font-size: 18px
+
+		&__filter
+			a
+				padding: 10px
+
+
+	.crumbs
+		margin-bottom: 15px
+
+
+
 	input
 		height: 35px
 		line-height: 35px
@@ -224,6 +269,7 @@
 		&__item
 			width: 30%
 			margin-bottom: 25px
+			padding: 0
 
 		li
 			margin-bottom: 10px
@@ -298,6 +344,22 @@
 
 
 @media only screen and (max-width : 576px)
+	.catalog
+		&__text
+			p
+				font-size: 12px
+
+			h1
+				font-size: 18px
+
+		&__filter
+			a
+				padding: 5px
+
+		&__bunner
+			p
+				font-size: 16px
+
 	.header
 		&__container--two
 			flex-wrap: wrap
@@ -312,8 +374,46 @@
 		&__search
 			width: 60%
 
+	.crumbs
+		li
+			margin-right: 5px
+
+		a
+			font-size: 12px
+
 
 @media only screen and (max-width : 480px)
+	.catalog
+		&__filter
+			display: flex
+			flex-wrap: wrap
+
+			a
+				font-size: 12px
+
+		&__left-filter
+			&_wrap
+				position: relative
+
+				&:hover,
+				&:focus
+					.catalog__left-filter_wrap--hover
+						left: 0
+						top: 105%
+
+				&--hover
+					&::before
+						top: -12px
+						left: 10px
+						border-bottom: 7px solid #fff
+						border-left: 7px solid transparent
+						border-right: 7px solid transparent
+						border-top: 7px solid transparent
+
+		select
+		font-size: 12px
+		padding-right: 0
+
 	.header
 		height: 45px
 
@@ -334,6 +434,9 @@
 			margin-right: auto
 			margin-left: auto
 
+	.hero
+		padding-bottom: 0px
+
 	.main
 		flex-wrap: wrap
 		flex-direction: column-reverse
@@ -344,11 +447,13 @@
 			&__nav li
 				width: 100%
 
-
-
+			&__card
+				margin-bottom: 0
 
 		&--left
 			width: 100%
+			max-width: 320px
+			margin: 0 auto
 
 
 	.btn img
@@ -362,6 +467,9 @@
 
 		&__partner
 			justify-content: center
+
+	.pagination
+		margin-bottom: 15px
 
 
 
