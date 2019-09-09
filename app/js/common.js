@@ -6,11 +6,11 @@ $(function() {
     slidesPerView: 1,
     spaceBetween: 30,
     navigation: {
-      nextEl: '.main--slider__next',
-      prevEl: '.main--slider__prev',
+      nextEl: '.header__next',
+      prevEl: '.header__prev',
     },
     pagination: {
-      el: '.swiper-pagination',
+      el: '.header__pagination',
     },
   });
 
