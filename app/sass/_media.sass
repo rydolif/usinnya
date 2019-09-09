@@ -19,6 +19,9 @@
 
 
 @media only screen and (max-width : 1200px)
+	.main--left__nav_main .list a
+		padding-left: 40px
+
 	.catalog__left-filter
 		padding-left: 0
 
@@ -286,6 +289,9 @@
 			font-size: 10px
 			line-height: 1.2
 
+			b, span
+				font-size: 10px
+
 			img
 				width: 36px
 				margin-right: 5px
@@ -346,6 +352,21 @@
 
 
 @media only screen and (max-width : 576px)
+	.main--left__nav
+		li
+			&:focus,
+			&:hover
+				.main--left__nav_hover
+					left: 0
+					top: 100%
+					width: 100%
+					max-width: 100%
+		&_hover
+			column-count: 2
+			&::before
+				display: none
+
+
 	.catalog
 		&__text
 			p

@@ -17,6 +17,20 @@
 
 $(function() {
 
+
+//------------------------------hero-----------------------------
+  var swiper = new Swiper('.header__slider', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.main--slider__next',
+      prevEl: '.main--slider__prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+
 //------------------------------slider-----------------------------
   var swiper = new Swiper('.main--slider', {
     slidesPerView: 5,
